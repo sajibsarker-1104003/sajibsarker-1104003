@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @sajibsarker-1104003
 - 👀 I’m interested in Programming
-- 🌱 I’m currently learning Full Stack Web Development(MERN)
+- 🌱 I’m currently working backend Development(Express,Nestjs,Prisma,Mongoose,PostgreSQL,Mongodb)
 - 💞️ I am looking forward to collaborating on Modern Web Development.
 
 
