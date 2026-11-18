@@ -1,31 +1,74 @@
-👋 Hello there! I'm Sajib Sarker, a dedicated DevOps Engineer with a strong background in backend development.
+# Hi, I'm Sajib Sarker 👋
 
-🔧 Skills:
-- Programming: Python, Node.js, Java, C/C++, C#, JavaScript, TypeScript, Bash
-- Runtime: Node.js, Java Virtual Machine (JVM), Common Language Runtime (CLR)
-- Backend Technologies: Nest.js, Express, Microsoft’s .NET
-- ORM: Prisma, Mongoose, Sequelize, Entity Framework, MongoDB .NET Driver
-- DB: MySQL, PostgreSQL, MongoDB, Redis, DynamoDB, S3
-- Testing Tools: Jest
-- CI/CD Tools: GitHub Actions, Jenkins
-- Configuration Management: Terraform, CloudFormation
-- Scripting: Python, Bash, Node.js
-- Development: Node.js, Microsoft’s .NET
-- Monitoring & Logging: ELK, Datalog
-- Communication: Jira, Confluence, Slack
-- Cloud Platforms: AWS, Azure
+**Full-Stack & Backend Engineer · DevOps · AI Platform**
 
-💼 Experience:
-  - Led transformative initiatives optimizing backend infrastructure and streamlining deployment processes for critical Risk Management software.
-  - Orchestrated the deployment of robust backend infrastructure using NestJS, Prisma, and PostgreSQL.
-  - Spearheaded the implementation of Docker containers for Microservices, streamlining development, testing, and production workflows.
-  - Leveraged AWS Lambda and API Gateway to craft a cost-efficient and secure Serverless architecture.
-  - Applied Terraform on AWS to automate resource provisioning and managed container registries using Amazon ECR.
-  - Orchestrated containers seamlessly with AWS Fargate, automating deployment and scaling for optimal operational efficiency.
-  - Crafted secure Virtual Private Cloud (VPC) environments on AWS, including meticulous planning of security groups and subnets.
-  - Enhanced system performance by implementing Redis Caching, significantly reducing database load.
+I build scalable SaaS platforms, serverless systems, and cloud infrastructure, and I'm now focused on AI platform engineering (RAG, vector search, LLM integration). Open to remote roles.
 
-🌱 I'm eager to collaborate on SAAS projects and am always seeking opportunities to innovate and automate.
+📍 Bangladesh (Remote) · 🔗 [LinkedIn](https://linkedin.com/in/sajibs1104003) · ✉️ sajibsarker1104003@gmail.com
 
-Let's connect and revolutionize the tech world together!
+---
 
+## 🤖 AI & Platform Engineering
+
+- **RAG services:** document ingestion, embeddings, vector similarity search, and LLM-backed answers
+- **Vector databases:** PostgreSQL + pgvector
+- **Embeddings:** self-hosted embedding models (1024-dim) alongside hosted LLM providers such as Groq
+- **AI integration:** shipping AI-powered services behind production backend APIs
+- **Secure access:** JWT authentication, separated user and document databases
+
+### ⭐ Featured: [nest-rag-service](https://github.com/sajibsarker-1104003/nest-rag-service)
+
+A NestJS Retrieval-Augmented Generation service with pgvector, local embeddings, and JWT auth.
+
+```mermaid
+flowchart LR
+    C[Client] --> API[NestJS API<br/>JWT auth]
+    API --> U[(Users DB)]
+    API --> E[Embedding model]
+    E --> V[(Docs DB<br/>pgvector)]
+    V --> API
+    API --> L[LLM provider<br/>Groq]
+```
+
+**Stack:** NestJS · Prisma · PostgreSQL · pgvector · JWT · Vitest
+
+---
+
+## 🔧 Skills
+
+| Area | Technologies |
+|---|---|
+| **Languages** | TypeScript, JavaScript, C#, C, Python, Bash |
+| **Backend** | NestJS, Express, Node.js, Microsoft .NET, REST APIs, Domain-Driven Design |
+| **Frontend** | React, Next.js |
+| **AI / Data** | RAG, pgvector, embeddings, LLM integration |
+| **ORM** | Prisma, Entity Framework, Sequelize, Mongoose, MongoDB .NET Driver |
+| **Databases** | PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, S3 |
+| **Cloud** | AWS (Lambda, API Gateway, Fargate, ECR, VPC), Azure |
+| **Infrastructure as Code** | Terraform, CloudFormation |
+| **Containers** | Docker, Kubernetes |
+| **CI/CD** | GitHub Actions, Jenkins |
+| **Monitoring** | ELK, Datadog |
+| **Testing** | Jest, Vitest |
+| **Collaboration** | Jira, Confluence, Slack |
+
+---
+
+## 💼 What I've Built
+
+- **Risk Management SaaS platform:** led backend and cloud automation across Enterprise, Project, Audit, Compliance, Cybersecurity, and Incident Management modules (NestJS, .NET, Prisma, PostgreSQL, DDD).
+- **Serverless on AWS:** provisioned infrastructure with Terraform and built cost-efficient, secure architectures on Lambda and API Gateway.
+- **Microservices:** containerized services with Docker and ran them on Kubernetes and AWS Fargate with automated deployment and scaling.
+- **CI/CD:** built GitHub Actions pipelines for testing, integration, and releases.
+- **Performance:** added Redis caching to cut database load and latency.
+- **Cloud networking:** designed secure AWS VPC environments with planned subnets and security groups.
+- **Full-stack SaaS:** shipped an event-based SaaS product with NestJS, Next.js, serverless payment endpoints, and Terraform.
+- **AI and blockchain integrations:** delivered AI-powered services and blockchain-based authentication behind backend APIs.
+
+---
+
+## 🌱 Currently
+
+Building and open-sourcing AI platform projects, and sharpening my full-stack and DevOps portfolio. Looking for **Backend, Full-Stack, DevOps, or AI Platform Engineer** roles.
+
+Let's connect, I'm always happy to talk about SaaS, cloud automation, and AI systems.
