@@ -4,7 +4,8 @@
 
 I build scalable SaaS platforms, serverless systems, and cloud infrastructure, and I'm now focused on AI platform engineering (RAG, vector search, LLM integration). Open to remote roles.
 
-📍 Bangladesh (Remote) · 🔗 [LinkedIn](https://linkedin.com/in/sajibs1104003) · ✉️ sajibsarker1104003@gmail.com [Professional Github](https://github.com/ssarker-coder-ops)
+📍 Bangladesh (Remote) · 🔗 [LinkedIn](https://linkedin.com/in/sajibs1104003) · ✉️ sajibsarker1104003@gmail.com 
+[Professional Github](https://github.com/ssarker-coder-ops)
 
 ---
 
