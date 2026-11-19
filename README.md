@@ -2,7 +2,7 @@
 
 **Full-Stack & Backend Engineer · DevOps · AI Platform**
 
-I build scalable SaaS platforms, serverless systems, and cloud infrastructure, and I'm now focused on AI platform engineering (RAG, vector search, LLM integration). Open to remote roles.
+I build scalable SaaS platforms, serverless systems, and cloud infrastructure, and I'm now focused on AI platform engineering (RAG, vector search, LLM integration, streaming, cost and latency measurement). Open to remote roles.
 
 📍 Bangladesh (Remote) · 🔗 [LinkedIn](https://linkedin.com/in/sajibs1104003) · ✉️ sajibsarker1104003@gmail.com 
 [Professional Github](https://github.com/ssarker-coder-ops)
@@ -12,14 +12,17 @@ I build scalable SaaS platforms, serverless systems, and cloud infrastructure, a
 ## 🤖 AI & Platform Engineering
 
 - **RAG services:** document ingestion, embeddings, vector similarity search, and LLM-backed answers
+- **Streaming responses:** token-by-token answers over Server-Sent Events, with JWT auth and error handling kept intact and upstream LLM calls cancelled on client disconnect
+- **Cost and latency measurement:** per-request token usage, time to first token and latency, plus a baseline script for P50/P95 latency and cost per query
 - **Vector databases:** PostgreSQL + pgvector
 - **Embeddings:** self-hosted embedding models (1024-dim) alongside hosted LLM providers such as Groq
 - **AI integration:** shipping AI-powered services behind production backend APIs
 - **Secure access:** JWT authentication, separated user and document databases
+- **Engineering docs:** architecture docs, ADRs, and benchmark notes alongside the code
 
 ### ⭐ Featured: [nest-rag-service](https://github.com/sajibsarker-1104003/nest-rag-service)
 
-A NestJS Retrieval-Augmented Generation service with pgvector, local embeddings, and JWT auth.
+A NestJS Retrieval-Augmented Generation service with pgvector, local embeddings, JWT auth, and SSE streaming.
 
 ```mermaid
 flowchart LR
@@ -29,9 +32,11 @@ flowchart LR
     E --> V[(Docs DB<br/>pgvector)]
     V --> API
     API --> L[LLM provider<br/>Groq]
+    L -->|SSE tokens + usage| API
+    API -->|SSE stream| C
 ```
 
-**Stack:** NestJS · Prisma · PostgreSQL · pgvector · JWT · Vitest
+**Stack:** NestJS · Prisma · PostgreSQL · pgvector · JWT · SSE · Vitest
 
 ---
 
@@ -40,9 +45,9 @@ flowchart LR
 | Area | Technologies |
 |---|---|
 | **Languages** | TypeScript, JavaScript, C#, C, Python, Bash |
-| **Backend** | NestJS, Express, Node.js, Microsoft .NET, REST APIs, Domain-Driven Design |
+| **Backend** | NestJS, Express, Node.js, Microsoft .NET, REST APIs, Server-Sent Events, Domain-Driven Design |
 | **Frontend** | React, Next.js |
-| **AI / Data** | RAG, pgvector, embeddings, LLM integration |
+| **AI / Data** | RAG, pgvector, embeddings, LLM integration, streaming, cost and latency benchmarking |
 | **ORM** | Prisma, Entity Framework, Sequelize, Mongoose, MongoDB .NET Driver |
 | **Databases** | PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, S3 |
 | **Cloud** | AWS (Lambda, API Gateway, Fargate, ECR, VPC), Azure |
@@ -65,11 +70,12 @@ flowchart LR
 - **Cloud networking:** designed secure AWS VPC environments with planned subnets and security groups.
 - **Full-stack SaaS:** shipped an event-based SaaS product with NestJS, Next.js, serverless payment endpoints, and Terraform.
 - **AI and blockchain integrations:** delivered AI-powered services and blockchain-based authentication behind backend APIs.
+- **RAG service with streaming:** built a NestJS RAG API with pgvector and local embeddings, added SSE streaming and per-request token, cost and latency metrics, and documented the decisions in ADRs.
 
 ---
 
 ## 🌱 Currently
 
-Building and open-sourcing AI platform projects, and sharpening my full-stack and DevOps portfolio. Looking for **Backend, Full-Stack, DevOps, or AI Platform Engineer** roles.
+Building and open-sourcing AI platform projects (next: similarity threshold, vector index, chunking, then agents and observability), and sharpening my full-stack and DevOps portfolio. Looking for **Backend, Full-Stack, DevOps, or AI Platform Engineer** roles.
 
 Let's connect, I'm always happy to talk about SaaS, cloud automation, and AI systems.
